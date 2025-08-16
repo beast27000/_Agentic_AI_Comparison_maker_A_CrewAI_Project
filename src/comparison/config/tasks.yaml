@@ -1,0 +1,35 @@
+research_task:
+  description: >
+    Compare FlowiseAI and CrewAI in terms of:
+
+    1. Support for VLLM (including support for other open-source LLMs beyond Ollama)
+    2. AMD GPU compatibility (for dev and prod use)
+    3. Apache 2.0 License — what is allowed, restrictions
+    4. Security and privacy — do these tools send data externally, endpoint behavior
+    5. Versatility for multi-agent workflows and agent control
+    6. Stability under production-scale workloads
+
+    Use up-to-date info from GitHub issues, changelogs, docs, and community discussions.
+    Provide links to each source for transparency.
+  expected_output: >
+    A structured and well-cited report containing all comparison dimensions above with section-wise findings.
+    Include GitHub links, documentation links, and clear assessments of strengths and weaknesses of each tool.
+  agent: research_engineer
+
+evaluation_task:
+  description: >
+    Write a final detailed comparative report from the research findings.
+    Structure the report into the following sections:
+
+    - Executive Summary
+    - Feature-by-feature Comparison Table
+    - Detailed Findings (one section per dimension)
+    - Final Recommendation
+
+    Ensure the tone is factual, neutral, and production-oriented.
+  expected_output: >
+    A full technical report named `output/tool_comparison_report.md`.
+  agent: evaluator
+  context:
+    - research_task
+  output_file: output/tool_comparison_report.md
