@@ -75,4 +75,5 @@ For support, questions, or feedback regarding the Comparison Crew or CrewAI:
 
 Let’s create wonders together with the power and simplicity of CrewAI 🚀
 
-Made by Vishvvesh Nagappan
+## Made by 
+Vishvvesh Nagappan
